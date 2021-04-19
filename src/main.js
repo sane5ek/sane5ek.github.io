@@ -7,8 +7,6 @@ import VueResource from 'vue-resource'
 
 Vue.config.productionTip = false
 Vue.use(VueResource)
-Vue.http.options.root = `${process.env.VUE_APP_BACKEND_URL}${process.env.VUE_APP_BACKEND_API_PREFIX}`
-console.log(Vue.http.options.root)
 
 new Vue({
   router,

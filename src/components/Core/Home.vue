@@ -2,7 +2,7 @@
   <v-container>
     <v-text-field
       v-model="fromCurrencyAmount"
-      label="fromCurrencyAmount"
+      label="Amount"
       clearable
       @input="convert"
       type="number"
@@ -11,26 +11,28 @@
     <v-select
       :items="currencies"
       v-model="fromCurrencyCode"
+      label="From Currency"
       @change="convert"
     >
     </v-select>
     <v-select
       :items="currencies"
       v-model="toCurrencyCode"
+      label="To Currency"
       @change="convert"
     >
     </v-select>
 
     <v-text-field
       v-model="result"
-      label="result"
+      label="Result"
       clearable
       type="number"
     >
     </v-text-field>
     <v-text-field
       v-model="precision"
-      label="precision"
+      label="Precision"
       clearable
       type="number"
     >
